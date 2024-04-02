@@ -11,12 +11,12 @@ abstract public class User {
     String email;
 
     public User(String Name) {
-        System.out.println("Called the User Constructor");
+        //System.out.println("Called the User Constructor");
         this.Name = Name;
         this.id = ++globalId;
     }
 
     public String GetName() {
-        return this.Name + "_user";
+        return this.Name;// + "_user";
     }
 }

@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Inheritance
  */
@@ -5,6 +7,24 @@ public class Inheritance {
     static int[] arr = new int[] {1,2,3};
 
     public static void main(String[] args) {
+
+        ArrayList<Student> students = new ArrayList<Student>();
+        students.add(new Student("name_856"));
+        students.add(new Student("name_3"));
+        students.add(new Student("name_2"));
+
+        students.sort(new StudentComparator());
+
+        for (Student student : students) {
+            System.out.println(student.GetName());
+        }
+
+
+
+
+
+
+        /*
         System.out.println("Before exception");
         try {
             int value = arr[-1];            
@@ -33,6 +53,6 @@ public class Inheritance {
 
         Triangle triangle = new Triangle(4, 6);
         System.out.println(triangle.GetArea());
-
+        */
     }
 }

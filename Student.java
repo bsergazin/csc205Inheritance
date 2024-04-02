@@ -3,7 +3,7 @@ public class Student extends User{
 
     public Student(String Name) {
         super(Name);
-        System.out.println("Called the Student Constructor");
+        //System.out.println("Called the Student Constructor");
     }
 
     /* 
